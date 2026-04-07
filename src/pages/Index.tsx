@@ -85,23 +85,12 @@ export default function Index() {
       <div style={{ background: "#fff", borderBottom: "1px solid #d0d0d0" }}>
         <div className="max-w-[1100px] mx-auto px-3 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between py-2 gap-2 sm:gap-0">
           {/* Logo */}
-          <a href="#" className="flex items-start gap-2 flex-shrink-0">
-            <div className="flex flex-col items-center">
-              {/* Bird icon placeholder */}
-              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 38 Q18 20 30 16 Q22 28 26 36" fill="#4a9090" opacity="0.7"/>
-                <path d="M26 36 Q34 18 46 12 Q36 30 32 38" fill="#3d8080" opacity="0.85"/>
-                <path d="M18 42 Q24 34 32 38 Q26 44 18 42Z" fill="#3d8080"/>
-              </svg>
-            </div>
-            <div className="flex flex-col justify-center mt-1">
-              <div style={{ fontSize: 9, color: "#666", lineHeight: 1.3, fontWeight: 400 }}>
-                ПЕРВАЯ<br />БИОТЕХНОЛОГИЧЕСКАЯ<br />КОМПАНИЯ
-              </div>
-              <div style={{ fontSize: 26, fontWeight: 700, color: "#3d8080", lineHeight: 1, letterSpacing: -0.5, fontFamily: "Arial, sans-serif" }}>
-                Би<span style={{ color: "#5a8a2a" }}>о</span>техагро
-              </div>
-            </div>
+          <a href="#" className="flex items-center flex-shrink-0">
+            <img
+              src="https://cdn.poehali.dev/projects/37d70944-f34d-4af4-b695-693bdae58491/bucket/6218960d-d66d-43fe-b3fd-b4018f64f10f.png"
+              alt="БиоТехАгро"
+              style={{ height: 64, width: "auto" }}
+            />
           </a>
 
           {/* Right: icons + search + phone */}
