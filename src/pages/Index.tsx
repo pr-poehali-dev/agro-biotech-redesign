@@ -85,23 +85,12 @@ export default function Index() {
       <div style={{ background: "#fff", borderBottom: "1px solid #d0d0d0" }}>
         <div className="max-w-[1100px] mx-auto px-3 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between py-2 gap-2 sm:gap-0">
           {/* Logo */}
-          <a href="#" className="flex-shrink-0" style={{ position: "relative", display: "inline-flex", alignItems: "center" }}>
+          <a href="#" className="flex-shrink-0">
             <img
-              src="https://cdn.poehali.dev/projects/37d70944-f34d-4af4-b695-693bdae58491/bucket/6218960d-d66d-43fe-b3fd-b4018f64f10f.png"
+              src="https://cdn.poehali.dev/projects/37d70944-f34d-4af4-b695-693bdae58491/bucket/ca6f043c-515f-4d69-b763-8158fb882328.png"
               alt="БиоТехАгро"
-              style={{ height: 64, width: "auto" }}
+              style={{ height: 72, width: "auto" }}
             />
-            <div style={{ marginLeft: 28, borderLeft: "1px solid #c8dada", paddingLeft: 10, lineHeight: 1.45 }}>
-              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", whiteSpace: "nowrap" }}>
-                Первая
-              </div>
-              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", whiteSpace: "nowrap" }}>
-                биотехнологическая
-              </div>
-              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", whiteSpace: "nowrap" }}>
-                компания
-              </div>
-            </div>
           </a>
 
           {/* Right: icons + search + phone */}
