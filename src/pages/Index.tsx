@@ -85,12 +85,23 @@ export default function Index() {
       <div style={{ background: "#fff", borderBottom: "1px solid #d0d0d0" }}>
         <div className="max-w-[1100px] mx-auto px-3 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between py-2 gap-2 sm:gap-0">
           {/* Logo */}
-          <a href="#" className="flex items-center flex-shrink-0">
+          <a href="#" className="flex items-center gap-2 flex-shrink-0">
             <img
               src="https://cdn.poehali.dev/projects/37d70944-f34d-4af4-b695-693bdae58491/bucket/6218960d-d66d-43fe-b3fd-b4018f64f10f.png"
               alt="БиоТехАгро"
               style={{ height: 64, width: "auto" }}
             />
+            <div style={{ borderLeft: "1px solid #c8dada", paddingLeft: 10, lineHeight: 1.35 }}>
+              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Первая
+              </div>
+              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                биотехнологическая
+              </div>
+              <div style={{ fontSize: 8.5, color: "#7aabab", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                компания
+              </div>
+            </div>
           </a>
 
           {/* Right: icons + search + phone */}
