@@ -4,34 +4,34 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 30% 10%;
+    --background: 0 0% 95%;
+    --foreground: 0 0% 18%;
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 10%;
+    --card-foreground: 0 0% 18%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 10%;
-    --primary: 220 45% 18%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 220 15% 92%;
-    --secondary-foreground: 220 30% 15%;
-    --muted: 220 15% 93%;
-    --muted-foreground: 220 15% 45%;
-    --accent: 38 65% 48%;
-    --accent-foreground: 0 0% 98%;
+    --popover-foreground: 0 0% 18%;
+    --primary: 174 35% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 88%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 82 38% 40%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 20% 85%;
-    --input: 220 20% 85%;
-    --ring: 220 45% 18%;
-    --radius: 0.25rem;
-    --sidebar-background: 220 45% 14%;
-    --sidebar-foreground: 220 15% 85%;
-    --sidebar-primary: 38 65% 48%;
+    --border: 0 0% 78%;
+    --input: 0 0% 78%;
+    --ring: 174 35% 38%;
+    --radius: 0.2rem;
+    --sidebar-background: 174 35% 38%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 82 38% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 40% 20%;
-    --sidebar-accent-foreground: 220 15% 85%;
-    --sidebar-border: 220 35% 22%;
-    --sidebar-ring: 38 65% 48%;
+    --sidebar-accent: 174 30% 48%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 174 30% 30%;
+    --sidebar-ring: 82 38% 40%;
   }
 }
 
@@ -41,121 +41,39 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    background-color: #f0f0f0;
   }
 }
 
-@layer utilities {
-  .font-display {
-    font-family: "Cormorant Garamond", serif;
-  }
-  .font-body {
-    font-family: "IBM Plex Sans", sans-serif;
-  }
+.product-link {
+  color: #3d8080;
+  text-decoration: underline;
+  font-style: italic;
+}
+.product-link:hover {
+  color: #5a8a2a;
 }
 
-@keyframes reveal-up {
-  from {
-    opacity: 0;
-    transform: translateY(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.product-table th {
+  background-color: hsl(174 35% 38%);
+  color: white;
+  font-size: 12px;
+  padding: 5px 8px;
+  border: 1px solid #2a6060;
+  text-align: center;
+  font-weight: 600;
 }
-
-@keyframes reveal-left {
-  from {
-    opacity: 0;
-    transform: translateX(-32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.product-table td {
+  border: 1px solid #c0c0c0;
+  padding: 6px 8px;
+  font-size: 12px;
+  vertical-align: top;
 }
-
-@keyframes fade-in-slow {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-reveal-up {
-  animation: reveal-up 0.7s ease-out both;
-}
-.animate-reveal-left {
-  animation: reveal-left 0.7s ease-out both;
-}
-.animate-fade-slow {
-  animation: fade-in-slow 1.2s ease-out both;
-}
-
-.delay-100 {
-  animation-delay: 0.1s;
-}
-.delay-200 {
-  animation-delay: 0.2s;
-}
-.delay-300 {
-  animation-delay: 0.3s;
-}
-.delay-400 {
-  animation-delay: 0.4s;
-}
-.delay-500 {
-  animation-delay: 0.5s;
-}
-.delay-600 {
-  animation-delay: 0.6s;
-}
-.delay-700 {
-  animation-delay: 0.7s;
-}
-
-.deco-line::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 2px;
-  background: hsl(var(--accent));
-  margin-top: 14px;
-}
-
-.nav-link {
-  position: relative;
-}
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: hsl(var(--accent));
-  transition: width 0.3s ease;
-}
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.portfolio-card .overlay {
-  transition: opacity 0.35s ease;
-  opacity: 0;
-}
-.portfolio-card:hover .overlay {
-  opacity: 1;
+.product-table tr:nth-child(even) td {
+  background-color: #f5f5f5;
 }
 
 html {
